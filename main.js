@@ -35,6 +35,19 @@ new Chart("graph", {
         }]
     },
     options: {
-        legend: {}
+        scales: {
+            yAxes: [{
+                scaleLabel: {
+                    display: true,
+                    labelString: "Value of NFT"
+                }
+            }],
+            xAxes: [{
+                scaleLabel: {
+                    display: true,
+                    labelString: "Time"
+                }
+            }]
+        }
     }
 });
