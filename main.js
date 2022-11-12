@@ -1,1 +1,1 @@
-
+JSC.Chart('graph', {});

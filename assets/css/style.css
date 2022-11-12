@@ -101,3 +101,8 @@ select {
 	font-family: "Georgia", Times, Serif;
 	font-size: 14px;
 }
+
+#graph {
+  width: 0%;
+  /* height: 10rem; */
+}
