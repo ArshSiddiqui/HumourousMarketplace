@@ -118,7 +118,8 @@ select {
 }
 
 #image {
-  background-image: url("https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80");
+  /* background-image: url("https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80"); */
+  background-image: url("https://imageio.forbes.com/specials-images/imageserve/627e9d5021975f98348f3296/Elon-Musk-Awarded-With-Axel-Springer-Award-In-Berlin/960x0.jpg?format=jpg&width=960");
   background-position: center center;
   /* background-attachment: fixed; */
   background-repeat: no-repeat;
