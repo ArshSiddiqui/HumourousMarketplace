@@ -130,3 +130,26 @@ select {
   background-position: center;
   background-size: cover;
 }
+
+#imageInput{
+  display: none;
+}
+
+#labelImageInput{
+  border-color: black;
+	border-style: solid;
+  border-width: 2px;
+	background-color: rgba(199, 21, 21, 0);
+  color: black;
+	cursor: pointer;
+	font-family: "Georgia", Times, Serif;
+	font-size: 1rem;
+	width: 6rem;
+  padding: 0.5rem;
+} 
+
+#labelImageInput:hover {
+	color: rgba(199, 21, 21); 
+  border-color: rgba(199, 21, 21);
+  transition: 1s;
+}
