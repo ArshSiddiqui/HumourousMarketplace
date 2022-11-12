@@ -3,11 +3,14 @@ const data = [];
 const dates = [];
 
 let max = 10000;
+let min = 7000;
 let idx = 0;
 for (let i = 0; i < 100; i++) {
-    data[idx] = Math.floor(Math.random() * max);
+    let difference = max - min;
+    data[idx] = Math.floor(Math.random() * max) + min;
     idx++;
     max -= 99;
+    min -= 69;
 
     dates[i] = i;
 }
@@ -18,12 +21,20 @@ for (let i = 0; i < 100; i++) {
 }
 console.log(combinedData);
 
-var chart = new Chart("graph", {
+new Chart("graph", {
     type: "line",
     data: {
+        labels: dates,
         datasets: [{
+            label: 'Market Value of the NFT over time',
+            fill: false,
+            borderColor: "rgba(131, 127, 127, 1)",
+            pointRadius: 4,
+            pointBackgroundColor: "rgba(0,0,0,1)",
             data: data
         }]
     },
-    options: {}
+    options: {
+        legend: {}
+    }
 });
