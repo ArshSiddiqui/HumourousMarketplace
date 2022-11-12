@@ -1,21 +1,26 @@
 // Generation of random, but negatively sloped data
 const data = [];
+const dates = [];
 
 let max = 10000;
+let idx = 0;
 for (let i = 0; i < 100; i++) {
-    data[i] = Math.floor(Math.random() * max);
+    data[idx] = i;
+    idx++;
+    data[idx] = Math.floor(Math.random() * max);
+    idx++;
     max -= 99;
-    console.log(max);
+
+    dates[i] = i;
 }
 console.log(data);
+console.log(dates);
 
 JSC.Chart('graph', {
-    type: 'horizontal column',
     series: [
         {
             points: [
-                {x: 'Apples', y: 50},
-                {x: 'Oranges', y: 42}
+                data
             ]
         }
     ]
