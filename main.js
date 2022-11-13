@@ -35,7 +35,7 @@ function randomizedGraph() {
     let randCurrency = Math.floor(Math.random() * currenciesLength);
 
     const times = ["seconds", "picoseconds", "clock cycles", "New York Second", "Onosecond",
-                "Scaramucci", "Microcentury"];
+                "Scaramucci", "Microcentury", "minutes", "hours"];
     let timesLength = times.length;
     let randTimes = Math.floor(Math.random() * timesLength);
 
