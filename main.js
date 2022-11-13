@@ -24,6 +24,16 @@ function randomizedGraph() {
     }
     console.log(combinedData);
 
+    const currencies = ["United States Dollar", "Great Britain Pound", "Australia Dollar", "Euro", 
+        "Switzerland Franc", "Japan Yen", "Angola Kwanza", "Algeria Dinar", "Afghanistan Afghani",
+        "Aruba Florin", "Azerbaijan New Manat", "Bahamas Dollar", "Belarus Ruble", "Burundi Franc",
+        "Cambodia Riel", "Denmark Krone", "East Caribbean Dollar", "Israel New Shekel", "Star Trek Currency",
+        "Kenya Shilling", "Kenya Shilling", "Mozambique New Metical", "St Helena Pound", "Bottle Caps",
+        "Tonga Pa'anga", "Monopoly Dollars", "Virgina Lotto Tickets", "New Jerset Lotto Tickets", "Bread", 
+        "M and Ms", "Benjamins", "Dead Presidents"];
+    let currenciesLength = currencies.length;
+    let randCurrency = Math.floor(Math.random() * currenciesLength);
+
     new Chart("graph", {
         type: "line",
         data: {
@@ -42,7 +52,7 @@ function randomizedGraph() {
                 yAxes: [{
                     scaleLabel: {
                         display: true,
-                        labelString: "Value of NFT ($)"
+                        labelString: "Value of NFT (" + currencies[randCurrency] + ")"
                     }
                 }],
                 xAxes: [{
