@@ -80,7 +80,7 @@ imageInput.addEventListener("change", function() {
 
 
 const subComments = ["Literally 1984. You know George Orwell warned us about this...",
-        "About as tragic as the Hindenburg :(",
+        "About as tragic as Darth Plagueis the Wise :(",
         "Most disruptive thing since sliced bread.",
         "No more monkeys jumping on the bed."];
 let subCommentLength = subComments.length;
