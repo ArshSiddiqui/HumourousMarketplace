@@ -29,7 +29,7 @@ function randomizedGraph() {
         "Aruba Florin", "Azerbaijan New Manat", "Bahamas Dollar", "Belarus Ruble", "Burundi Franc",
         "Cambodia Riel", "Denmark Krone", "East Caribbean Dollar", "Israel New Shekel", "Star Trek Currency",
         "Kenya Shilling", "Kenya Shilling", "Mozambique New Metical", "St Helena Pound", "Bottle Caps",
-        "Tonga Pa'anga", "Monopoly Dollars", "Virgina Lotto Tickets", "New Jerset Lotto Tickets", "Bread", 
+        "Tonga Pa'anga", "Monopoly Dollars", "Virgina Lotto Tickets", "New Jerset Lotto Tickets", "Loaves of Bread", 
         "M and Ms", "Benjamins", "Dead Presidents"];
     let currenciesLength = currencies.length;
     let randCurrency = Math.floor(Math.random() * currenciesLength);
