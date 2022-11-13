@@ -34,6 +34,11 @@ function randomizedGraph() {
     let currenciesLength = currencies.length;
     let randCurrency = Math.floor(Math.random() * currenciesLength);
 
+    const times = ["seconds", "picoseconds", "clock cycles", "New York Second", "Onosecond",
+                "Scaramucci", "Microcentury"];
+    let timesLength = times.length;
+    let randTimes = Math.floor(Math.random() * timesLength);
+
     new Chart("graph", {
         type: "line",
         data: {
@@ -58,7 +63,7 @@ function randomizedGraph() {
                 xAxes: [{
                     scaleLabel: {
                         display: true,
-                        labelString: "Time (seconds)"
+                        labelString: "Time (" + times[randTimes] + ")"
                     }
                 }]
             }
