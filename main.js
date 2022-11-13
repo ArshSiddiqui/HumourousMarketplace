@@ -77,3 +77,13 @@ imageInput.addEventListener("change", function() {
     reader.readAsDataURL(this.files[0]);
     randomizedGraph();
 });
+
+
+const subComments = ["Literally 1984. You know George Orwell warned us about this...",
+        "About as tragic as the Hindenburg :(",
+        "Most disruptive thing since sliced bread.",
+        "No more monkeys jumping on the bed."];
+let subCommentLength = subComments.length;
+let randSubComment = Math.floor(Math.random() * subCommentLength);
+const subCommentP = document.getElementById("subComment");
+subCommentP.textContent = subComments[randSubComment]
